@@ -3,23 +3,20 @@ import Link from "next/link";
 export default function ExperienciaAcademica() {
   return (
     <div className="min-h-screen">
-      <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-sky-400 to-blue-600 shadow-sm">
-        <nav className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between text-sm sm:text-base">
+      <header className="mt-8 sticky top-0 z-50 w-full bg-gradient-to-r from-sky-400 to-blue-600 shadow-md">
+        <nav className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex flex-wrap items-center justify-center gap-4 sm:justify-between text-sm sm:text-base">
           <div className="font-bold text-black text-xl tracking-wide">Maria Eduarda</div>
           <ul className="flex flex-wrap gap-4 sm:gap-6 text-black font-medium">
-            {["Home", "Sobre", "Experiência Acadêmica", "Experiência Profissional", "Projetos Desenvolvidos", "Jogo"].map((item, idx) => (
-              <li key={idx}>
-                <Link
-                  href={`/${item === "Home" ? "" : item.replace(/\s+/g, '').toLowerCase()}`}
-                  className="hover:underline hover:text-white transition-colors"
-                >
-                  {item}
-                </Link>
-              </li>
-            ))}
+            <li><Link href="/" className="hover:underline hover:text-white transition-colors">Home</Link></li>
+            <li><Link href="/sobre" className="hover:underline hover:text-white transition-colors">Sobre</Link></li>
+            <li><Link href="/experienciaAcademica" className="hover:underline hover:text-white transition-colors">Experiência Acadêmica</Link></li>
+            <li><Link href="/experienciaProfissional" className="hover:underline hover:text-white transition-colors">Experiência Profissional</Link></li>
+            <li><Link href="/projetosDesenvolvidos" className="hover:underline hover:text-white transition-colors">Projetos Desenvolvidos</Link></li>
+            <li><Link href="/jogo" className="hover:underline hover:text-white transition-colors">Jogo</Link></li>
           </ul>
         </nav>
       </header>
+
 
 
       <div className="px-6 py-12 sm:px-20 font-[family-name:var(--font-geist-sans)]">
