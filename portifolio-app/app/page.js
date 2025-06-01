@@ -15,10 +15,10 @@ export default function Home() {
               <Link href="/sobre" className="hover:underline">Sobre</Link>
             </li>
             <li>
-              <Link href="/experiencia-academica" className="hover:underline">Experiência Acadêmica</Link>
+              <Link href="/experienciaAcademica" className="hover:underline">Experiência Acadêmica</Link>
             </li>
             <li>
-              <Link href="/experiencia-profissional" className="hover:underline">Experiência Profissional</Link>
+              <Link href="/experienciaProfissional" className="hover:underline">Experiência Profissional</Link>
             </li>
             <li>
               <Link href="/projetos" className="hover:underline">Projetos Desenvolvidos</Link>
