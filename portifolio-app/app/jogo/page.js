@@ -1,10 +1,9 @@
-// app/jogo/page.tsx
 "use client";
 
 import { useState, useEffect } from "react";
 
-function gerarSenha(): string {
-  const digitos: string[] = [];
+function gerarSenha() {
+  const digitos = [];
   while (digitos.length < 4) {
     const d = Math.floor(Math.random() * 10).toString();
     if (!digitos.includes(d)) digitos.push(d);
@@ -12,7 +11,7 @@ function gerarSenha(): string {
   return digitos.join("");
 }
 
-function verificarTentativa(senha: string, tentativa: string): string {
+function verificarTentativa(senha, tentativa) {
   let bulls = 0;
   let cows = 0;
 
@@ -29,7 +28,7 @@ function verificarTentativa(senha: string, tentativa: string): string {
 export default function JogoDaSenha() {
   const [senha, setSenha] = useState(gerarSenha);
   const [tentativa, setTentativa] = useState("");
-  const [tentativas, setTentativas] = useState<{ valor: string; resultado: string }[]>([]);
+  const [tentativas, setTentativas] = useState([]);
   const [fimDeJogo, setFimDeJogo] = useState(false);
   const [mensagemFinal, setMensagemFinal] = useState("");
 
