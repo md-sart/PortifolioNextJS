@@ -1,4 +1,7 @@
-export default function ExperienciaAcademica() {
+import Link from "next/link";
+
+
+export default function ExperienciaProfissional() {
   return (
     <div className="min-h-screen px-6 py-12 sm:px-20 font-[family-name:var(--font-geist-sans)]">
       <header className="mt-8 sticky top-0 z-50 w-full bg-white dark:bg-black shadow-md">
@@ -16,45 +19,47 @@ export default function ExperienciaAcademica() {
       </header>
       
       <h1 className="text-3xl sm:text-5xl font-bold text-center mb-12 text-blue-600">
-        Experiência Acadêmica
+        Experiência Profissional
       </h1>
 
       <div className="space-y-10 max-w-4xl mx-auto text-base sm:text-lg leading-relaxed">
         <section>
           <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-            Graduação - Sistemas para Internet
+            Auxiliar Administrativo – Setor de Contabilidade
           </h2>
           <p>
-            Universidade Católica de Pernambuco (UNICAP) <br />
-            <span className="text-sm text-gray-600 dark:text-gray-400">2022 - em andamento</span>
-          </p>
-          <p className="mt-2">
-            O curso tem me proporcionado conhecimentos sólidos em desenvolvimento web, banco de dados, arquitetura de software, programação e segurança da informação. Ao longo da graduação, tenho trabalhado com projetos práticos e interdisciplinares que fortalecem minha capacidade técnica e colaborativa.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-            Formação Técnica Complementar
-          </h2>
-          <p>
-            Trilhas de capacitação através de plataformas como Salesforce Trailhead, Alura e cursos livres. <br />
+            Instituição Pública | Recife/PE <br />
             <span className="text-sm text-gray-600 dark:text-gray-400">2022 - atual</span>
           </p>
           <p className="mt-2">
-            Tenho realizado trilhas focadas em CRM (Salesforce), lógica de programação, automação de processos com Power Platform, além de aprofundamentos em linguagens como Python, JavaScript, HTML e CSS.
+            Responsável pela automação de processos manuais e análises de dados para otimizar rotinas da equipe. Utilizo ferramentas como Python, Power BI e Power Automate para desenvolver scripts, dashboards e fluxos automatizados, contribuindo para a eficiência operacional e redução de retrabalho.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-            Participações Acadêmicas
+            Projetos de Tecnologia e Inovação (Hackathons)
           </h2>
-          <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-            <li>Participação em hackathons, como Fuel Conference 2024 e Hacka Energy – Sebrae & Porto Digital.</li>
-            <li>Projetos interdisciplinares na universidade envolvendo front-end e análise de dados.</li>
-            <li>Monitorias e eventos acadêmicos voltados à inovação e tecnologia.</li>
-          </ul>
+          <p>
+            Participante ativa em eventos de inovação e tecnologia, contribuindo com habilidades em front-end, lógica de programação e análise de dados. <br />
+            <span className="text-sm text-gray-600 dark:text-gray-400">2023 - atual</span>
+          </p>
+          <p className="mt-2">
+            Destaques incluem o desenvolvimento da solução <strong>TeacherIo</strong> na Fuel Conference 2024 e projeto de detecção de fraudes no consumo de energia no <strong>Hacka Energy</strong>. Nessas experiências, atuei na prototipação, integração de APIs e apresentação das soluções.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+            Atuação em CRM – Salesforce
+          </h2>
+          <p>
+            Em formação para atuar com consultoria Salesforce. <br />
+            <span className="text-sm text-gray-600 dark:text-gray-400">2024 - atual</span>
+          </p>
+          <p className="mt-2">
+            Tenho me dedicado ao aprendizado contínuo na plataforma Salesforce, com foco em Service Cloud, Sales Cloud e Marketing Cloud. Meu objetivo é aplicar essas tecnologias na criação de soluções que melhorem a experiência do cliente e a eficiência dos processos de atendimento.
+          </p>
         </section>
       </div>
     </div>
