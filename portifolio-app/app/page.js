@@ -54,7 +54,7 @@ export default function Home() {
           <div className="flex-shrink-0">
             <Image
               className="rounded-full shadow-lg border-4 border-primary"
-              src="/img.png"
+              src="/perfil.jpeg"
               alt="Foto de Maria Eduarda"
               width={250}
               height={250}
