@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      {/* Header fixo */}
+      {}
       <header className="sticky top-0 z-50 w-full bg-white dark:bg-black shadow-md">
         <nav className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex flex-wrap items-center justify-center gap-4 sm:justify-between text-sm sm:text-base">
           <div className="font-semibold text-blue-600 text-lg">Maria Eduarda</div>
