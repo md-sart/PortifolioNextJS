@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function ExperienciaAcademica() {
   return (
     <div className="min-h-screen px-6 py-12 sm:px-20 font-[family-name:var(--font-geist-sans)]">
@@ -11,12 +9,12 @@ export default function ExperienciaAcademica() {
             <li><Link href="/sobre" className="hover:underline">Sobre</Link></li>
             <li><Link href="/experienciaAcademica" className="hover:underline">Experiência Acadêmica</Link></li>
             <li><Link href="/experienciaProfissional" className="hover:underline">Experiência Profissional</Link></li>
-            <li><Link href="/projetos" className="hover:underline">Projetos Desenvolvidos</Link></li>
+            <li><Link href="/projetosDesenvolvidos" className="hover:underline">Projetos Desenvolvidos</Link></li>
             <li><Link href="/jogo" className="hover:underline">Jogo</Link></li>
           </ul>
         </nav>
       </header>
-
+      
       <h1 className="text-3xl sm:text-5xl font-bold text-center mb-12 text-blue-600">
         Experiência Acadêmica
       </h1>

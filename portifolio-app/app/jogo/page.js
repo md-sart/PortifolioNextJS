@@ -76,7 +76,7 @@ export default function JogoDaSenha() {
             <li><Link href="/sobre" className="hover:underline">Sobre</Link></li>
             <li><Link href="/experienciaAcademica" className="hover:underline">Experiência Acadêmica</Link></li>
             <li><Link href="/experienciaProfissional" className="hover:underline">Experiência Profissional</Link></li>
-            <li><Link href="/projetos" className="hover:underline">Projetos Desenvolvidos</Link></li>
+            <li><Link href="/projetosDesenvolvidos" className="hover:underline">Projetos Desenvolvidos</Link></li>
             <li><Link href="/jogo" className="hover:underline">Jogo</Link></li>
           </ul>
         </nav>
