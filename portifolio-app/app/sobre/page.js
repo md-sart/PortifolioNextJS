@@ -1,6 +1,5 @@
-// app/sobre/page.tsx
-
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Sobre() {
   return (
@@ -32,12 +31,9 @@ export default function Sobre() {
 
       <footer className="row-start-3 text-center text-sm">
         Voltar para{" "}
-        <a
-          href="/"
-          className="underline hover:text-blue-600"
-        >
+        <Link href="/" className="underline hover:text-blue-600">
           página inicial
-        </a>
+        </Link>
       </footer>
     </div>
   );
