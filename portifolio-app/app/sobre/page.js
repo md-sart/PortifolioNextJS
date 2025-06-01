@@ -4,24 +4,22 @@ import Link from "next/link";
 export default function Sobre() {
   return (
     <div className="min-h-screen">
-      <div className="min-h-screen">
-        <header className="mt-8 sticky top-0 z-50 w-full bg-white dark:bg-black shadow-md">
-          <nav className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex flex-wrap items-center justify-center gap-4 sm:justify-between text-sm sm:text-base">
-            <div className="font-semibold text-blue-600 text-lg">Maria Eduarda</div>
-            <ul className="flex flex-wrap gap-4 sm:gap-6 text-gray-800 dark:text-white">
-              <li><Link href="/" className="hover:underline">Home</Link></li>
-              <li><Link href="/sobre" className="hover:underline">Sobre</Link></li>
-              <li><Link href="/experienciaAcademica" className="hover:underline">Experiência Acadêmica</Link></li>
-              <li><Link href="/experienciaProfissional" className="hover:underline">Experiência Profissional</Link></li>
-              <li><Link href="/projetos" className="hover:underline">Projetos Desenvolvidos</Link></li>
-              <li><Link href="/jogo" className="hover:underline">Jogo</Link></li>
-            </ul>
-          </nav>
-        </header>
-      </div>
+      <header className="mt-8 sticky top-0 z-50 w-full bg-white dark:bg-black shadow-md">
+        <nav className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex flex-wrap items-center justify-center gap-4 sm:justify-between text-sm sm:text-base">
+          <div className="font-semibold text-blue-600 text-lg">Maria Eduarda</div>
+          <ul className="flex flex-wrap gap-4 sm:gap-6 text-gray-800 dark:text-white">
+            <li><Link href="/" className="hover:underline">Home</Link></li>
+            <li><Link href="/sobre" className="hover:underline">Sobre</Link></li>
+            <li><Link href="/experienciaAcademica" className="hover:underline">Experiência Acadêmica</Link></li>
+            <li><Link href="/experienciaProfissional" className="hover:underline">Experiência Profissional</Link></li>
+            <li><Link href="/projetos" className="hover:underline">Projetos Desenvolvidos</Link></li>
+            <li><Link href="/jogo" className="hover:underline">Jogo</Link></li>
+          </ul>
+        </nav>
+      </header>
 
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start text-center sm:text-left max-w-3xl">
+      <div className="flex flex-col items-center sm:items-start p-8 sm:p-20 gap-16 max-w-4xl mx-auto font-[family-name:var(--font-geist-sans)]">
+        <main className="flex flex-col gap-8 text-center sm:text-left">
           <h1 className="text-3xl sm:text-5xl font-bold">Sobre mim</h1>
 
           <p className="text-base sm:text-lg leading-relaxed">
@@ -38,7 +36,7 @@ export default function Sobre() {
         </main>
 
         <Image
-          className="row-start-2 rounded-xl shadow-md"
+          className="rounded-xl shadow-md"
           src="/sobre-img.png"
           alt="Maria Eduarda sorrindo, em um ambiente de tecnologia"
           width={300}
@@ -46,7 +44,7 @@ export default function Sobre() {
           priority
         />
 
-        <footer className="row-start-3 text-center text-sm">
+        <footer className="text-center text-sm">
           Voltar para{" "}
           <Link href="/" className="underline hover:text-blue-600">
             página inicial
