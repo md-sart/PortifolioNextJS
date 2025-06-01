@@ -4,19 +4,24 @@ import Link from "next/link";
 export default function ExperienciaProfissional() {
   return (
     <div className="min-h-screen px-6 py-12 sm:px-20 font-[family-name:var(--font-geist-sans)]">
-      <header className="mt-8 sticky top-0 z-50 w-full bg-white dark:bg-black shadow-md">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex flex-wrap items-center justify-center gap-4 sm:justify-between text-sm sm:text-base">
-          <div className="font-semibold text-blue-600 text-lg">Maria Eduarda</div>
-          <ul className="flex flex-wrap gap-4 sm:gap-6 text-gray-800 dark:text-white">
-            <li><Link href="/" className="hover:underline">Home</Link></li>
-            <li><Link href="/sobre" className="hover:underline">Sobre</Link></li>
-            <li><Link href="/experienciaAcademica" className="hover:underline">Experiência Acadêmica</Link></li>
-            <li><Link href="/experienciaProfissional" className="hover:underline">Experiência Profissional</Link></li>
-            <li><Link href="/projetosDesenvolvidos" className="hover:underline">Projetos Desenvolvidos</Link></li>
-            <li><Link href="/jogo" className="hover:underline">Jogo</Link></li>
+      <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-sky-400 to-blue-600 shadow-sm">
+        <nav className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between text-sm sm:text-base">
+          <div className="font-bold text-black text-xl tracking-wide">Maria Eduarda</div>
+          <ul className="flex flex-wrap gap-4 sm:gap-6 text-black font-medium">
+            {["Home", "Sobre", "Experiência Acadêmica", "Experiência Profissional", "Projetos Desenvolvidos", "Jogo"].map((item, idx) => (
+              <li key={idx}>
+                <Link
+                  href={`/${item === "Home" ? "" : item.replace(/\s+/g, '').toLowerCase()}`}
+                  className="hover:underline hover:text-white transition-colors"
+                >
+                  {item}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </header>
+
 
       <h1 className="text-3xl sm:text-5xl font-bold text-center mb-12 text-blue-600">
         Experiência Profissional

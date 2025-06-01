@@ -4,28 +4,32 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="sticky top-0 z-50 w-full bg-white dark:bg-black shadow-sm">
-        <nav className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between text-sm sm:text-base">
-          <div className="font-bold text-primary text-xl tracking-wide">Maria Eduarda</div>
-          <ul className="flex flex-wrap gap-4 sm:gap-6 text-gray-800 dark:text-gray-100 font-medium">
-            {["Home", "Sobre", "Experiência Acadêmica", "Experiência Profissional", "Projetos Desenvolvidos", "Jogo"].map((item, idx) => (
-              <li key={idx}>
-                <Link href={`/${item === "Home" ? "" : item.replace(/\s+/g, '').toLowerCase()}`} className="hover:underline hover:text-primary transition-colors">
-                  {item}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header>
+      <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-sky-400 to-blue-600 shadow-sm">
+  <nav className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between text-sm sm:text-base">
+    <div className="font-bold text-black text-xl tracking-wide">Maria Eduarda</div>
+    <ul className="flex flex-wrap gap-4 sm:gap-6 text-black font-medium">
+      {["Home", "Sobre", "Experiência Acadêmica", "Experiência Profissional", "Projetos Desenvolvidos", "Jogo"].map((item, idx) => (
+        <li key={idx}>
+          <Link
+            href={`/${item === "Home" ? "" : item.replace(/\s+/g, '').toLowerCase()}`}
+            className="hover:underline hover:text-white transition-colors"
+          >
+            {item}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
 
       <div className="flex-1 grid place-items-center px-6 sm:px-12 py-16 sm:py-24">
         <main className="max-w-5xl w-full flex flex-col-reverse sm:flex-row items-center gap-12">
           <div className="flex-1 space-y-6 text-center sm:text-left">
-            <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight bg-gradient-to-r from-primary to-blue-400 text-transparent bg-clip-text">
+            <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight bg-gradient-to-r from-sky-400 to-blue-600 text-transparent bg-clip-text dark:from-blue-400 dark:to-blue-300">
               Analise, compreenda e <br />
               <span className="text-primary">EVOLUA!</span>
             </h1>
+
 
             <p className="text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-300">
               Olá, bem-vindo(a) ao meu portfólio! Sou Maria Eduarda, estudante de Sistemas para Internet pela UNICAP e atualmente focada na área de CRM com Salesforce. Tenho habilidades em Python, JavaScript, HTML, CSS, React, SQL, Power BI e Power Automate, além de estar me especializando em Salesforce para desenvolver soluções inovadoras e eficientes.
