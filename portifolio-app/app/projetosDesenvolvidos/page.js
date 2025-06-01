@@ -1,4 +1,4 @@
-// app/projetos-desenvolvidos/page.tsx
+import Link from "next/link";
 
 export default function ProjetosDesenvolvidos() {
   return (
@@ -16,7 +16,7 @@ export default function ProjetosDesenvolvidos() {
           </ul>
         </nav>
       </header>
-      
+
       <h1 className="text-3xl sm:text-5xl font-bold text-center mb-12 text-blue-600">
         Projetos Desenvolvidos
       </h1>
