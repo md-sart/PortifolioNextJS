@@ -2,18 +2,25 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1a1a;
+  --primary: #2563eb; /* Azul moderno */
+  --secondary: #e0f2ff;
+  --accent: #f0f0f0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f5f5f5;
+    --primary: #60a5fa;
+    --secondary: #1e3a8a;
+    --accent: #1a1a1a;
   }
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans, Arial, Helvetica, sans-serif);
+  font-family: var(--font-geist-sans, Arial, sans-serif);
+  transition: background-color 0.3s, color 0.3s;
 }

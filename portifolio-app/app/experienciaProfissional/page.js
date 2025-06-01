@@ -17,7 +17,7 @@ export default function ExperienciaProfissional() {
           </ul>
         </nav>
       </header>
-      
+
       <h1 className="text-3xl sm:text-5xl font-bold text-center mb-12 text-blue-600">
         Experiência Profissional
       </h1>
