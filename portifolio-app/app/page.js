@@ -1,12 +1,9 @@
-// app/page.tsx
-
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      {}
+    <div className="min-h-screen">
       <header className="sticky top-0 z-50 w-full bg-white dark:bg-black shadow-md">
         <nav className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex flex-wrap items-center justify-center gap-4 sm:justify-between text-sm sm:text-base">
           <div className="font-semibold text-blue-600 text-lg">Maria Eduarda</div>
@@ -33,7 +30,6 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* Conteúdo principal */}
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20">
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start text-center sm:text-left">
           <h1 className="text-3xl sm:text-5xl font-bold">
