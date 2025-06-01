@@ -83,17 +83,6 @@ export default function Home() {
           height={250}
           priority
         />
-
-        <footer className="row-start-3 text-center text-sm">
-          Baixe meu currículo{" "}
-          <a
-            href="/curriculo/CV.pdf"
-            target="_blank"
-            className="underline hover:text-blue-600"
-          >
-            aqui
-          </a>
-        </footer>
       </div>
     </div>
   );
