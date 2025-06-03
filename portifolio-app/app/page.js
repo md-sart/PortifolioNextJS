@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Conselho from "../components/Conselho"; // ajuste o caminho conforme sua estrutura
 
 export default function Home() {
   return (
@@ -18,7 +19,6 @@ export default function Home() {
         </nav>
       </header>
 
-
       <div className="flex-1 grid place-items-center px-6 sm:px-12 py-16 sm:py-24">
         <main className="max-w-5xl w-full flex flex-col-reverse sm:flex-row items-center gap-12">
           <div className="flex-1 space-y-6 text-center sm:text-left">
@@ -26,7 +26,6 @@ export default function Home() {
               Analise, compreenda e <br />
               <span className="text-primary">EVOLUA!</span>
             </h1>
-
 
             <p className="text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-300">
               Olá, bem-vindo(a) ao meu portfólio! Sou Maria Eduarda, estudante de Sistemas para Internet pela UNICAP e atualmente focada na área de CRM com Salesforce. Tenho habilidades em Python, JavaScript, HTML, CSS, React, SQL, Power BI e Power Automate, além de estar me especializando em Salesforce para desenvolver soluções inovadoras e eficientes.
@@ -63,6 +62,12 @@ export default function Home() {
           </div>
         </main>
       </div>
+
+      <footer className="bg-gray-100 dark:bg-gray-900 py-6">
+        <div className="max-w-4xl mx-auto px-4">
+          <Conselho />
+        </div>
+      </footer>
     </div>
   );
 }
