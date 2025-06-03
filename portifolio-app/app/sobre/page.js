@@ -50,12 +50,6 @@ export default function Sobre() {
           priority
         />
 
-        <footer className="text-center text-sm">
-          Voltar para{" "}
-          <Link href="/" className="underline hover:text-blue-600">
-            página inicial
-          </Link>
-        </footer>
       </div>
     </div>
   );
