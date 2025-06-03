@@ -27,20 +27,22 @@ function verificarTentativa(senha, tentativa) {
 }
 
 export default function JogoDaSenha() {
-  const [senha, setSenha] = useState(gerarSenha);
+  // Para garantir que gerarSenha() execute só uma vez na inicialização:
+  const [senha, setSenha] = useState(() => gerarSenha());
   const [tentativa, setTentativa] = useState("");
   const [tentativas, setTentativas] = useState([]);
   const [fimDeJogo, setFimDeJogo] = useState(false);
   const [mensagemFinal, setMensagemFinal] = useState("");
 
   useEffect(() => {
-    if (tentativas.length === 10 && !fimDeJogo) {
+    if (tentativas.length >= 10 && !fimDeJogo) {
       setFimDeJogo(true);
       setMensagemFinal(`Fim de jogo! A senha era ${senha}`);
     }
   }, [tentativas, senha, fimDeJogo]);
 
   function lidarComTentativa() {
+    // Validação da tentativa: 4 dígitos únicos e numéricos
     if (tentativa.length !== 4 || new Set(tentativa).size !== 4 || !/^\d{4}$/.test(tentativa)) {
       alert("Digite uma senha válida com 4 dígitos únicos.");
       return;
@@ -48,8 +50,7 @@ export default function JogoDaSenha() {
 
     const resultado = verificarTentativa(senha, tentativa);
     const novaEntrada = { valor: tentativa, resultado };
-    const novasTentativas = [novaEntrada, ...tentativas];
-    setTentativas(novasTentativas);
+    setTentativas((prev) => [novaEntrada, ...prev]);
     setTentativa("");
 
     if (tentativa === senha) {
@@ -82,12 +83,10 @@ export default function JogoDaSenha() {
         </nav>
       </header>
 
-
       <div className="p-6 sm:p-20 font-sans max-w-xl mx-auto">
         <h1 className="text-3xl sm:text-5xl font-bold text-left text-blue-600">
           Jogo da Senha
         </h1>
-
 
         <button
           onClick={() => alert(`Senha atual: ${senha}`)}
@@ -101,14 +100,22 @@ export default function JogoDaSenha() {
             <input
               type="text"
               value={tentativa}
-              onChange={(e) => setTentativa(e.target.value)}
+              onChange={(e) => {
+                // Garante que só números sejam digitados
+                const val = e.target.value;
+                if (/^\d*$/.test(val)) {
+                  setTentativa(val);
+                }
+              }}
               maxLength={4}
               className="border border-gray-400 p-2 rounded w-full"
               placeholder="Digite 4 dígitos únicos"
+              disabled={fimDeJogo}
             />
             <button
               onClick={lidarComTentativa}
               className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+              disabled={fimDeJogo}
             >
               Tentar
             </button>
@@ -116,7 +123,7 @@ export default function JogoDaSenha() {
         )}
 
         {mensagemFinal && (
-          <div className="mb-4 text-center font-medium text-lg text-green-600 dark:text-green-400">
+          <div className={`mb-4 text-center font-medium text-lg ${fimDeJogo ? "text-green-600 dark:text-green-400" : "text-red-600"}`}>
             {mensagemFinal}
           </div>
         )}
