@@ -33,7 +33,7 @@ export default function Sobre() {
           </p>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            Em um dos projetos, integrei uma <strong>API pública dos Conselhos de Classe</strong>, possibilitando buscas dinâmicas por profissionais registrados, demonstrando o uso de chamadas assíncronas e manipulação de dados em tempo real.
+            Em um dos projetos, integrei uma <strong>API pública dos Conselhos</strong>, possibilitando buscas dinâmicas por profissionais registrados, demonstrando o uso de chamadas assíncronas e manipulação de dados em tempo real.
           </p>
 
           <p className="text-base sm:text-lg leading-relaxed">
