@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 
-export default function ExperienciaProfissional() {
+export default function Sobre() {
   return (
     <div className="min-h-screen">
       <header className="mt-8 sticky top-0 z-50 w-full bg-gradient-to-r from-sky-400 to-blue-600 shadow-md">
@@ -17,51 +18,34 @@ export default function ExperienciaProfissional() {
         </nav>
       </header>
 
+
       <div className="flex flex-col items-center sm:items-start p-8 sm:p-20 gap-16 max-w-4xl mx-auto font-[family-name:var(--font-geist-sans)]">
-        <main className="flex flex-col gap-8 text-center sm:text-left w-full">
+        <main className="flex flex-col gap-8 text-center sm:text-left">
           <h1 className="text-3xl sm:text-5xl font-bold text-left text-blue-600">
-            Experiência Profissional
+            Sobre mim
           </h1>
 
-          <section className="text-base sm:text-lg leading-relaxed">
-            <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-              Auxiliar Administrativo – Setor de Contabilidade
-            </h2>
-            <p>
-              Instituição Pública | Recife/PE <br />
-              <span className="text-sm text-gray-600 dark:text-gray-400">2022 - atual</span>
-            </p>
-            <p className="mt-2">
-              Responsável pela automação de processos manuais e análises de dados para otimizar rotinas da equipe. Utilizo ferramentas como Python, Power BI e Power Automate para desenvolver scripts, dashboards e fluxos automatizados, contribuindo para a eficiência operacional e redução de retrabalho.
-            </p>
-          </section>
+          <p className="text-base sm:text-lg leading-relaxed">
+            Sou Maria Eduarda, estudante de <strong>Sistemas para Internet</strong> na UNICAP, com graduação em Secretariado Executivo. Atualmente, trabalho com automação de processos e análise de dados, mas meu grande foco está em me especializar em <strong>Salesforce</strong> e atuar como consultora na área de <strong>CRM</strong>.
+          </p>
 
-          <section className="text-base sm:text-lg leading-relaxed">
-            <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-              Projetos de Tecnologia e Inovação (Hackathons)
-            </h2>
-            <p>
-              Participante ativa em eventos de inovação e tecnologia, contribuindo com habilidades em front-end, lógica de programação e análise de dados. <br />
-              <span className="text-sm text-gray-600 dark:text-gray-400">2023 - atual</span>
-            </p>
-            <p className="mt-2">
-              Destaques incluem o desenvolvimento da solução <strong>TeacherIo</strong> na Fuel Conference 2024 e projeto de detecção de fraudes no consumo de energia no <strong>Hacka Energy</strong>. Nessas experiências, atuei na prototipação, integração de APIs e apresentação das soluções.
-            </p>
-          </section>
+          <p className="text-base sm:text-lg leading-relaxed">
+            Tenho participado de <strong>hackathons</strong>, eventos de tecnologia e programas de formação como forma de colocar meus conhecimentos em prática. Participei de soluções voltadas à <strong>automação na saúde</strong>, <strong>monitoramento com IA</strong>, e uso de <strong>drones com machine learning</strong> para problemas do setor energético.
+          </p>
 
-          <section className="text-base sm:text-lg leading-relaxed">
-            <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-              Atuação em CRM – Salesforce
-            </h2>
-            <p>
-              Em formação para atuar com consultoria Salesforce. <br />
-              <span className="text-sm text-gray-600 dark:text-gray-400">2024 - atual</span>
-            </p>
-            <p className="mt-2">
-              Tenho me dedicado ao aprendizado contínuo na plataforma Salesforce, com foco em Service Cloud, Sales Cloud e Marketing Cloud. Meu objetivo é aplicar essas tecnologias na criação de soluções que melhorem a experiência do cliente e a eficiência dos processos de atendimento.
-            </p>
-          </section>
+          <p className="text-base sm:text-lg leading-relaxed">
+            Além do meu interesse técnico, gosto de aprender com a comunidade. Sou <strong>Embaixadora Cloud Girls</strong> e ativa na <strong>Trailblazer Community</strong>. Busco crescer profissionalmente contribuindo com inovação, empatia e responsabilidade em cada projeto.
+          </p>
         </main>
+
+        <Image
+          className="rounded-xl shadow-md"
+          src="/sobre-img.png"
+          alt="Maria Eduarda sorrindo, em um ambiente de tecnologia"
+          width={300}
+          height={300}
+          priority
+        />
 
         <footer className="text-center text-sm">
           Voltar para{" "}
@@ -73,3 +57,4 @@ export default function ExperienciaProfissional() {
     </div>
   );
 }
+
