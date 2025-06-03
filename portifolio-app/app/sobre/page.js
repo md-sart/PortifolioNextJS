@@ -41,15 +41,6 @@ export default function Sobre() {
           </p>
         </main>
 
-        <Image
-          className="rounded-xl shadow-md"
-          src="/sobre-img.png"
-          alt="Imagem relacionada à tecnologia e desenvolvimento web"
-          width={300}
-          height={300}
-          priority
-        />
-
       </div>
     </div>
   );
