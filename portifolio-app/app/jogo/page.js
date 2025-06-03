@@ -84,9 +84,10 @@ export default function JogoDaSenha() {
 
 
       <div className="p-6 sm:p-20 font-sans max-w-xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-blue-600 text-center">
+        <h1 className="text-3xl sm:text-5xl font-bold text-left text-blue-600">
           Jogo da Senha
         </h1>
+
 
         <button
           onClick={() => alert(`Senha atual: ${senha}`)}

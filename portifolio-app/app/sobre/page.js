@@ -21,7 +21,9 @@ export default function Sobre() {
 
       <div className="flex flex-col items-center sm:items-start p-8 sm:p-20 gap-16 max-w-4xl mx-auto font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-8 text-center sm:text-left">
-          <h1 className="text-3xl sm:text-5xl font-bold">Sobre mim</h1>
+          <h1 className="text-3xl sm:text-5xl font-bold text-left text-blue-600">
+            Sobre mim
+          </h1>
 
           <p className="text-base sm:text-lg leading-relaxed">
             Sou Maria Eduarda, estudante de <strong>Sistemas para Internet</strong> na UNICAP, com graduação em Secretariado Executivo. Atualmente, trabalho com automação de processos e análise de dados, mas meu grande foco está em me especializar em <strong>Salesforce</strong> e atuar como consultora na área de <strong>CRM</strong>.

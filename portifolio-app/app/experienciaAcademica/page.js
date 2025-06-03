@@ -20,9 +20,10 @@ export default function ExperienciaAcademica() {
 
 
       <div className="px-6 py-12 sm:px-20 font-[family-name:var(--font-geist-sans)]">
-        <h1 className="text-3xl sm:text-5xl font-bold text-center mb-12 text-blue-600">
+        <h1 className="text-3xl sm:text-5xl font-bold text-left mb-12 text-blue-600">
           Experiência Acadêmica
         </h1>
+
 
         <div className="space-y-10 max-w-4xl mx-auto text-base sm:text-lg leading-relaxed">
           <section>
