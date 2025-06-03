@@ -13,21 +13,20 @@ function gerarSenha() {
 }
 
 function verificarTentativa(senha, tentativa) {
-  let bulls = 0;
-  let cows = 0;
+  let touros = 0;
+  let vacas = 0;
 
   for (let i = 0; i < 4; i++) {
     if (tentativa[i] === senha[i]) {
-      bulls++;
+      touros++;
     } else if (senha.includes(tentativa[i])) {
-      cows++;
+      vacas++;
     }
   }
-  return `${bulls} Bulls, ${cows} Cows`;
+  return `${touros} Touro(s), ${vacas} Vaca(s)`;
 }
 
 export default function JogoDaSenha() {
-  // Para garantir que gerarSenha() execute só uma vez na inicialização:
   const [senha, setSenha] = useState(() => gerarSenha());
   const [tentativa, setTentativa] = useState("");
   const [tentativas, setTentativas] = useState([]);
@@ -42,7 +41,6 @@ export default function JogoDaSenha() {
   }, [tentativas, senha, fimDeJogo]);
 
   function lidarComTentativa() {
-    // Validação da tentativa: 4 dígitos únicos e numéricos
     if (tentativa.length !== 4 || new Set(tentativa).size !== 4 || !/^\d{4}$/.test(tentativa)) {
       alert("Digite uma senha válida com 4 dígitos únicos.");
       return;
@@ -68,7 +66,7 @@ export default function JogoDaSenha() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-black text-white">
       <header className="mt-8 sticky top-0 z-50 w-full bg-gradient-to-r from-sky-400 to-blue-600 shadow-md">
         <nav className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex flex-wrap items-center justify-center gap-4 sm:justify-between text-sm sm:text-base">
           <div className="font-bold text-black text-xl tracking-wide">Maria Eduarda</div>
@@ -84,14 +82,30 @@ export default function JogoDaSenha() {
       </header>
 
       <div className="p-6 sm:p-20 font-sans max-w-xl mx-auto">
-        <h1 className="text-3xl sm:text-5xl font-bold text-left text-blue-600">
+        <h1 className="text-3xl sm:text-5xl font-bold text-left text-blue-600 mb-4">
           Jogo da Senha
         </h1>
 
+        <div className="bg-gray-100 text-black rounded p-4 mb-6 text-sm sm:text-base leading-relaxed shadow">
+          <p className="font-semibold mb-2">Como jogar:</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>O objetivo é adivinhar a senha de 4 dígitos únicos.</li>
+            <li>A cada tentativa, você receberá dicas:</li>
+            <li><strong>1 Touro</strong>: dígito certo no lugar certo.</li>
+            <li><strong>1 Vaca</strong>: dígito certo no lugar errado.</li>
+            <li>Você tem no máximo 10 tentativas.</li>
+            <li>Boa sorte!</li>
+          </ul>
+        </div>
+
         <button
           onClick={() => alert(`Senha atual: ${senha}`)}
-          className="mb-4 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
+          className="mb-6 flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition"
         >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-.443 1.358-1.203 2.591-2.204 3.58" />
+          </svg>
           Mostrar Senha (debug)
         </button>
 
@@ -101,20 +115,19 @@ export default function JogoDaSenha() {
               type="text"
               value={tentativa}
               onChange={(e) => {
-                // Garante que só números sejam digitados
                 const val = e.target.value;
                 if (/^\d*$/.test(val)) {
                   setTentativa(val);
                 }
               }}
               maxLength={4}
-              className="border border-gray-400 p-2 rounded w-full"
+              className="border border-gray-400 p-2 rounded w-full font-mono text-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
               placeholder="Digite 4 dígitos únicos"
               disabled={fimDeJogo}
             />
             <button
               onClick={lidarComTentativa}
-              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
               disabled={fimDeJogo}
             >
               Tentar
@@ -123,7 +136,7 @@ export default function JogoDaSenha() {
         )}
 
         {mensagemFinal && (
-          <div className={`mb-4 text-center font-medium text-lg ${fimDeJogo ? "text-green-600 dark:text-green-400" : "text-red-600"}`}>
+          <div className={`mb-4 text-center font-medium text-lg ${fimDeJogo ? "text-green-500" : "text-red-500"}`}>
             {mensagemFinal}
           </div>
         )}
@@ -132,7 +145,7 @@ export default function JogoDaSenha() {
           <div className="text-center mb-6">
             <button
               onClick={novoJogo}
-              className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+              className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
             >
               Novo Jogo
             </button>
@@ -143,7 +156,7 @@ export default function JogoDaSenha() {
           {tentativas.map((t, i) => (
             <li
               key={i}
-              className="flex justify-between items-center bg-gray-100 p-3 rounded shadow-sm"
+              className="flex justify-between items-center bg-gray-100 text-black p-3 rounded shadow-sm"
             >
               <span className="font-mono text-lg">{t.valor}</span>
               <span className="text-gray-700">{t.resultado}</span>
