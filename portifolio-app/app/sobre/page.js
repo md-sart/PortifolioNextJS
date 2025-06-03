@@ -21,7 +21,7 @@ export default function Sobre() {
       <div className="flex flex-col items-center sm:items-start p-8 sm:p-20 gap-16 max-w-4xl mx-auto font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-8 text-center sm:text-left">
           <h1 className="text-3xl sm:text-5xl font-bold text-left text-blue-600">
-            Sobre esta o desenvolvimento desta página
+            Sobre o desenvolvimento desta página
           </h1>
 
           <p className="text-base sm:text-lg leading-relaxed">
