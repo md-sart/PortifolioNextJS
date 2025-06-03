@@ -64,7 +64,7 @@ export default function Home() {
         </main>
       </div>
 
-      <footer className="bg-gray-100 dark:bg-gray-900 py-6">
+      <footer className="bg-gradient-to-r from-sky-400 to-blue-600 shadow-md">
         <div className="max-w-4xl mx-auto px-4">
           <Conselho />
         </div>

@@ -20,12 +20,12 @@ export default function Conselho() {
   }, []);
 
   return (
-    <div className="text-center text-sm text-gray-700 dark:text-gray-300">
+    <div className="text-center text-sm text-black">
       <p className="italic">💬 Conselho do dia:</p>
       <p className="mt-1 font-medium">{`"${conselho}"`}</p>
       <button
         onClick={buscarConselho}
-        className="mt-2 text-blue-600 hover:underline"
+        className="mt-2 text-black underline hover:no-underline bg-transparent border-none cursor-pointer"
       >
         Novo conselho
       </button>
