@@ -18,30 +18,33 @@ export default function Sobre() {
         </nav>
       </header>
 
-
       <div className="flex flex-col items-center sm:items-start p-8 sm:p-20 gap-16 max-w-4xl mx-auto font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-8 text-center sm:text-left">
           <h1 className="text-3xl sm:text-5xl font-bold text-left text-blue-600">
-            Sobre mim
+            Sobre esta página
           </h1>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            Sou Maria Eduarda, estudante de <strong>Sistemas para Internet</strong> na UNICAP, com graduação em Secretariado Executivo. Atualmente, trabalho com automação de processos e análise de dados, mas meu grande foco está em me especializar em <strong>Salesforce</strong> e atuar como consultora na área de <strong>CRM</strong>.
+            Este portfólio foi desenvolvido utilizando o <strong>Next.js</strong>, um framework React que oferece renderização otimizada, roteamento automático e organização moderna para aplicações web.
           </p>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            Tenho participado de <strong>hackathons</strong>, eventos de tecnologia e programas de formação como forma de colocar meus conhecimentos em prática. Participei de soluções voltadas à <strong>automação na saúde</strong>, <strong>monitoramento com IA</strong>, e uso de <strong>drones com machine learning</strong> para problemas do setor energético.
+            Para estilização e layout responsivo, utilizei o <strong>Tailwind CSS</strong>, que permite construir interfaces de forma rápida e consistente com classes utilitárias.
           </p>
 
           <p className="text-base sm:text-lg leading-relaxed">
-            Além do meu interesse técnico, gosto de aprender com a comunidade. Sou <strong>Embaixadora Cloud Girls</strong> e ativa na <strong>Trailblazer Community</strong>. Busco crescer profissionalmente contribuindo com inovação, empatia e responsabilidade em cada projeto.
+            Em um dos projetos, integrei uma <strong>API pública dos Conselhos de Classe</strong>, possibilitando buscas dinâmicas por profissionais registrados, demonstrando o uso de chamadas assíncronas e manipulação de dados em tempo real.
+          </p>
+
+          <p className="text-base sm:text-lg leading-relaxed">
+            Além disso, aproveitei recursos do Next.js como carregamento otimizado de imagens com o componente <code>next/image</code>, melhorando a performance e experiência do usuário.
           </p>
         </main>
 
         <Image
           className="rounded-xl shadow-md"
           src="/sobre-img.png"
-          alt="Maria Eduarda sorrindo, em um ambiente de tecnologia"
+          alt="Imagem relacionada à tecnologia e desenvolvimento web"
           width={300}
           height={300}
           priority
@@ -57,4 +60,3 @@ export default function Sobre() {
     </div>
   );
 }
-
