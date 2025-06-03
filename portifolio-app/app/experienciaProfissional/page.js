@@ -26,40 +26,79 @@ export default function ExperienciaProfissional() {
           <div className="space-y-10 text-base sm:text-lg leading-relaxed">
             <section>
               <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-                Auxiliar Administrativo – Setor de Contabilidade
+                Estagiária de Salesforce
               </h2>
               <p>
-                Instituição Pública | Recife/PE <br />
-                <span className="text-sm text-gray-600 dark:text-gray-400">2022 - atual</span>
+                Amarante | Recife, PE <br />
+                <span className="text-sm text-gray-600 dark:text-gray-400">setembro 2024 – atualmente</span>
               </p>
               <p className="mt-2">
-                Responsável pela automação de processos manuais e análises de dados para otimizar rotinas da equipe. Utilizo ferramentas como Python, Power BI e Power Automate para desenvolver scripts, dashboards e fluxos automatizados, contribuindo para a eficiência operacional e redução de retrabalho.
+                Suporte aos usuários do Service Cloud; criação e manutenção de relatórios e painéis no Salesforce; auxílio na configuração de segmentações e jornadas no Marketing Cloud; participação nas cerimônias de scrum; apoio na melhoria contínua e controle de qualidade do sistema.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-                Projetos de Tecnologia e Inovação (Hackathons)
+                Auxiliar Administrativo I
               </h2>
               <p>
-                Participante ativa em eventos de inovação e tecnologia, contribuindo com habilidades em front-end, lógica de programação e análise de dados. <br />
-                <span className="text-sm text-gray-600 dark:text-gray-400">2023 - atual</span>
+                Rueda e Rueda Advogados | Recife, PE <br />
+                <span className="text-sm text-gray-600 dark:text-gray-400">março 2024 – setembro 2024</span>
               </p>
               <p className="mt-2">
-                Destaques incluem o desenvolvimento da solução <strong>TeacherIo</strong> na Fuel Conference 2024 e projeto de detecção de fraudes no consumo de energia no <strong>Hacka Energy</strong>. Nessas experiências, atuei na prototipação, integração de APIs e apresentação das soluções.
+                Criação e manutenção de dashboards no Power BI e fluxos de automação no Power Automate; suporte aos usuários do financeiro; controle de faturamento; emissão e cancelamento de notas fiscais; gerenciamento de dados com SQL e Python.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-                Atuação em CRM – Salesforce
+                Jovem Aprendiz – Assistente Administrativo
               </h2>
               <p>
-                Em formação para atuar com consultoria Salesforce. <br />
-                <span className="text-sm text-gray-600 dark:text-gray-400">2024 - atual</span>
+                Rueda e Rueda Advogados | Recife, PE <br />
+                <span className="text-sm text-gray-600 dark:text-gray-400">fevereiro 2023 – fevereiro 2024</span>
               </p>
               <p className="mt-2">
-                Tenho me dedicado ao aprendizado contínuo na plataforma Salesforce, com foco em Service Cloud, Sales Cloud e Marketing Cloud. Meu objetivo é aplicar essas tecnologias na criação de soluções que melhorem a experiência do cliente e a eficiência dos processos de atendimento.
+                Apoio às rotinas do departamento financeiro, controle de faturamento e prestação de contas; manipulação de planilhas; arquivamento e digitalização de documentos.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+                Estagiária de Secretariado
+              </h2>
+              <p>
+                Tribunal Regional Eleitoral de Pernambuco | Recife, PE <br />
+                <span className="text-sm text-gray-600 dark:text-gray-400">maio 2022 – fevereiro 2024</span>
+              </p>
+              <p className="mt-2">
+                Organização de documentos e triagem de processos no sistema SEI; elaboração de ofícios e atas; assessoramento administrativo; suporte telefônico às Zonas Eleitorais.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+                Bolsista de Secretariado
+              </h2>
+              <p>
+                Secretaria de Pós-Graduação – Centro de Informática (UFPE) | Recife, PE <br />
+                <span className="text-sm text-gray-600 dark:text-gray-400">outubro 2021 – julho 2022</span>
+              </p>
+              <p className="mt-2">
+                Atendimento a estudantes e professores; emissão de documentos; gestão de matrículas; uso dos sistemas SIGAA e SIPAC para apoio acadêmico.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+                Bolsista de Secretariado
+              </h2>
+              <p>
+                Rádio Universitária Paulo Freire | Recife, PE <br />
+                <span className="text-sm text-gray-600 dark:text-gray-400">fevereiro 2021 – outubro 2021</span>
+              </p>
+              <p className="mt-2">
+                Apoio à coordenação geral, operação da chamada pública, processos dos estudantes e divulgação de programas na rádio e redes sociais.
               </p>
             </section>
           </div>
