@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Conselho from "../components/Conselho"; // ajuste o caminho conforme sua estrutura
+import Conselho from "./components/Conselho"; // ajuste o caminho conforme sua estrutura
 
 export default function Home() {
   return (
