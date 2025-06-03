@@ -26,38 +26,51 @@ export default function ExperienciaAcademica() {
           <div className="space-y-10 text-base sm:text-lg leading-relaxed">
             <section>
               <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-                Graduação - Sistemas para Internet
+                Bacharelado em Secretariado Executivo
+              </h2>
+              <p>
+                Universidade Federal de Pernambuco (UFPE) <br />
+                <span className="text-sm text-gray-600 dark:text-gray-400">Concluído em 2024</span>
+              </p>
+              <p className="mt-2">
+                Formação focada em habilidades administrativas, comunicação e organização, com experiência prática em atividades secretariais e apoio institucional.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+                Graduação em Sistemas para Internet (em andamento)
               </h2>
               <p>
                 Universidade Católica de Pernambuco (UNICAP) <br />
-                <span className="text-sm text-gray-600 dark:text-gray-400">2022 - em andamento</span>
+                <span className="text-sm text-gray-600 dark:text-gray-400">Início em 2022 - previsão de conclusão em junho/2026</span>
               </p>
               <p className="mt-2">
-                O curso tem me proporcionado conhecimentos sólidos em desenvolvimento web, banco de dados, arquitetura de software, programação e segurança da informação. Ao longo da graduação, tenho trabalhado com projetos práticos e interdisciplinares que fortalecem minha capacidade técnica e colaborativa.
+                Curso voltado para desenvolvimento web, banco de dados, programação e metodologias ágeis, com forte ênfase em projetos práticos e interdisciplinaridade.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-                Formação Técnica Complementar
-              </h2>
-              <p>
-                Trilhas de capacitação através de plataformas como Salesforce Trailhead, Alura e cursos livres. <br />
-                <span className="text-sm text-gray-600 dark:text-gray-400">2022 - atual</span>
-              </p>
-              <p className="mt-2">
-                Tenho realizado trilhas focadas em CRM (Salesforce), lógica de programação, automação de processos com Power Platform, além de aprofundamentos em linguagens como Python, JavaScript, HTML e CSS.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
-                Participações Acadêmicas
+                Cursos e Capacitações Complementares
               </h2>
               <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li>Participação em hackathons, como Fuel Conference 2024 e Hacka Energy – Sebrae & Porto Digital.</li>
-                <li>Projetos interdisciplinares na universidade envolvendo front-end e análise de dados.</li>
-                <li>Monitorias e eventos acadêmicos voltados à inovação e tecnologia.</li>
+                <li>Programação Web Java – Instituto PROA/SENAC (2022)</li>
+                <li>Computação em Nuvem – Escola da Nuvem (2023)</li>
+                <li>AWS Certified Cloud Practitioner (2023)</li>
+                <li>Fast Aceleração – Engenharia de Plataforma (2024)</li>
+                <li>DXP Training Camp Desenvolvedor Salesforce (2025)</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+                Participação em Atividades Extracurriculares
+              </h2>
+              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+                <li>Intercâmbio no Canadá pelo Programa Ganhe o Mundo (2019)</li>
+                <li>Fuel Conference 2024 – desenvolvimento da ferramenta TeacherIo</li>
+                <li>Hackathons: Hacka Energy, Hacka Health, Residência OnBoard Porto Digital, Early Stage SEBRAE</li>
               </ul>
             </section>
           </div>
